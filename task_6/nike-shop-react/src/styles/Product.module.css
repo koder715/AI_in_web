@@ -1,0 +1,52 @@
+.detail {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 2rem;
+    padding: 2rem;
+    align-items: center;
+  }
+  
+  .image {
+    max-width: 100%;
+    border-radius: 1rem;
+    height: 300px;
+    object-fit: contain;
+  }
+  
+  .info h2 {
+    font-size: 2rem;
+    margin-bottom: 1rem;
+  }
+  
+  .info p {
+    font-size: 1rem;
+    line-height: 1.6;
+  }
+  
+  .price {
+    font-size: 1.5rem;
+    color: #ff5a5f;
+    margin: 1rem 0;
+  }
+  
+  .button {
+    background-color: #ff5a5f;
+    border: none;
+    padding: 0.75rem 1.5rem;
+    color: white;
+    font-size: 1rem;
+    border-radius: 0.5rem;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+  }
+  
+  .button:hover {
+    opacity: 0.9;
+  }
+  
+  @media (max-width: 768px) {
+    .detail {
+      grid-template-columns: 1fr;
+    }
+  }
+  
